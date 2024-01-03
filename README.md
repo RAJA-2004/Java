@@ -1,11 +1,11 @@
-# C++ and Object-Oriented Programming (OOP) Repository
+# Java Programming Repository
 
-Welcome to the C++ and Object-Oriented Programming (OOP) repository! This repository is dedicated to storing code and resources related to C++ programming and OOP concepts.
+Welcome to the Java Programming repository! This repository is dedicated to storing code and resources related to Java programming and OOPs concepts.
 <br>
 <br>
 <div align="center">
-  <img class="img" width="400" height="300" src="https://cdn.worldvectorlogo.com/logos/c.svg">
-  <img class="img" width="400" height="50%" src="https://media0.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e478lbou8f44pvtp5nofrjtvm687t13cw4217ltpyrg&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+  <img class="img" width="400" height="300" src="https://www.vectorlogo.zone/logos/java/java-ar21.svg">
+  <img class="img" width="500" height="300" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*lhOax3cZATGZwEhG0uTYRA.gif">
 </div>
 <br>
 <br>
