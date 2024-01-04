@@ -20,7 +20,7 @@ If you'd like to contribute to this repository by adding code examples, tutorial
 4. Push your changes to your forked repository.
 5. Create a pull request to merge your changes into this repository.
 
-Please ensure that your contributions align with the focus of this repository on C++ and OOP.
+Please ensure that your contributions align with the focus of this repository on Java and OOPs.
 
 ## License
 
