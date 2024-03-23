@@ -1,3 +1,4 @@
+package Assignment;
 import java.util.Arrays;
 
 public class RemoveElementFromArray {
@@ -18,4 +19,5 @@ public class RemoveElementFromArray {
             System.out.println("Invalid index to remove.");
         }
     }
+
 }
