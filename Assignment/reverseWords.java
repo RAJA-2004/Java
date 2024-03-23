@@ -1,3 +1,4 @@
+package Assignment;
 public class reverseWords {
     public static void main(String[] args) {
         String inputString = "Java is Cool";
