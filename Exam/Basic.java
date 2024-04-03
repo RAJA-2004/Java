@@ -20,15 +20,33 @@ class subclass extends abs{
 
 public class Basic {
     public static void main(String[] args) {
-        Scanner obj1 = new Scanner(System.in);
+        Scanner obj = new Scanner(System.in);
 
-        subclass obj = new subclass();
+        // ! max occur character
 
-        // Call the abstract method
-        obj.aMethod();
 
-        // Call the non-abstract method
-        obj.normalMethod();
+        String str = obj.nextLine();
+        char[] arr = str.toCharArray();
+        int[] hash = new int[256]; // Correct initialization
+        for (int i = 0; i < str.length(); i++) {
+            hash[arr[i]]++; // Correct index calculation
+        }
+        int maxi = 0;
+        char ans = ' ';
+        for (int i = 0; i < str.length(); i++) { // Iterate over the length of the string
+            if (hash[arr[i]] > maxi) { // Compare with maxi
+                maxi = hash[arr[i]];
+                ans = arr[i]; // Store the character
+            }
+        }
+        System.out.println(ans); 
+        // subclass obj = new subclass();
+
+        // // Call the abstract method
+        // obj.aMethod();
+
+        // // Call the non-abstract method
+        // obj.normalMethod();
 
         // String[] names = new String[5];
         // int[] votes = new int[5];
