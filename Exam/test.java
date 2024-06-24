@@ -20,19 +20,19 @@ public class test {
 
 
         // ! WAVE SORT
-        // System.out.print("enter array size : ");
-        // int n = obj.nextInt();
-        // int[] arr = new int[n];
-        // for(int i=0;i<n;i++){
-        //     arr[i] = obj.nextInt();
-        // }
-        // Arrays.sort(arr);
-        // for(int i=0;i<arr.length-1;i+=2){
-        //     swaps(arr,i,i+1);
-        // }
-        // for(int i=0;i<n;i++){
-        //     System.out.print(arr[i]+" ");
-        // }
+        System.out.print("enter array size : ");
+        int n = obj.nextInt();
+        int[] arr = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = obj.nextInt();
+        }
+        Arrays.sort(arr);
+        for(int i=0;i<arr.length-1;i+=2){
+            swaps(arr,i,i+1);
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
 
         // ! METHOD OVERLOADING
         // cp c = new cp();
@@ -162,82 +162,82 @@ public class test {
         // }
 
         // ! CASE CONVERT AND FREQUENCY COUNT
-        // String str1 = obj.nextLine();
-        // String str2 = "";
-        // for(int i=0;i<str1.length();i++){
-        //     char ch = str1.charAt(i);
-        //     if(ch >= 'a' && ch <= 'z'){
-        //         ch = (char)(ch+'A'-'a');
-        //     }
-        //     str2+=ch;
-        // }
-        // System.out.println(str2);
-        // int[] frequency = new int[256];
-        // char[] s2 = str2.toCharArray();
-        // for(char ch:s2){
-        //     frequency[ch]++;
-        // }
-        // for(int i=0;i<256;i++){
-        //     if(frequency[i]!=0){
-        //         System.out.println((char)i+"-"+frequency[i]);
-        //     }
-        // }
+        String str1 = obj.nextLine();
+        String str2 = "";
+        for(int i=0;i<str1.length();i++){
+            char ch = str1.charAt(i);
+            if(ch >= 'a' && ch <= 'z'){
+                ch = (char)(ch+'A'-'a');
+            }
+            str2+=ch;
+        }
+        System.out.println(str2);
+        int[] frequency = new int[256];
+        char[] s2 = str2.toCharArray();
+        for(char ch:s2){
+            frequency[ch]++;
+        }
+        for(int i=0;i<256;i++){
+            if(frequency[i]!=0){
+                System.out.println((char)i+"-"+frequency[i]);
+            }
+        }
 
         // ! COMMON ELEMENTS IN 3 ARRAY
-    //     System.out.print("enter size of array 1 : ");
-    //     int m = obj.nextInt();
-    //     System.out.print("enter size of array 2 : ");
-    //     int n = obj.nextInt();
-    //     System.out.print("enter size of array 3 : ");
-    //     int p = obj.nextInt();
-    //     int[] arr1 = new int[m];
-    //     int[] arr2 = new int[n];
-    //     int[] arr3 = new int[p];
-    //     for(int i=0;i<m;i++){
-    //         arr1[i] = obj.nextInt();
-    //     }
-    //     for(int i=0;i<n;i++){
-    //         arr2[i] = obj.nextInt();
-    //     }
-    //     for(int i=0;i<p;i++){
-    //         arr3[i] = obj.nextInt();
-    //     }
-    //    Set<Integer> st = new HashSet<>();
-    //     for(int i=0;i<m;i++){
-    //         for(int j=0;j<n;j++){
-    //             for(int k=0;k<p;k++){
-    //                 if(arr1[i]==arr2[j] && arr2[j]==arr3[k]){
-    //                     st.add(arr1[i]);
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     System.out.println(st);
+        System.out.print("enter size of array 1 : ");
+        int m = obj.nextInt();
+        System.out.print("enter size of array 2 : ");
+        int n = obj.nextInt();
+        System.out.print("enter size of array 3 : ");
+        int p = obj.nextInt();
+        int[] arr1 = new int[m];
+        int[] arr2 = new int[n];
+        int[] arr3 = new int[p];
+        for(int i=0;i<m;i++){
+            arr1[i] = obj.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            arr2[i] = obj.nextInt();
+        }
+        for(int i=0;i<p;i++){
+            arr3[i] = obj.nextInt();
+        }
+       Set<Integer> st = new HashSet<>();
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                for(int k=0;k<p;k++){
+                    if(arr1[i]==arr2[j] && arr2[j]==arr3[k]){
+                        st.add(arr1[i]);
+                    }
+                }
+            }
+        }
+        System.out.println(st);
 
         // ! ISOMORPHIC
-        // String str1 = obj.nextLine();
-        // String str2 = obj.nextLine();
-        // int ans = 0;
-        // Map<Character,Character> mp = new HashMap<>();
-        // if(str1.length()!=str2.length()){
-        //     System.out.println("not isomorphic");
-        // }
-        // for(int i=0;i<str1.length();i++){
-        //     char s1 = str1.charAt(i);
-        //     char s2 = str2.charAt(i);
-        //     if(mp.containsKey(s1)){
-        //         if(mp.get(s1)!=s2){
-        //             ans = -1;
-        //         }
-        //     }else{
-        //         if(mp.containsValue(s2)){
-        //             ans = -1;
-        //         }
-        //         mp.put(s1, s2);
-        //     }
-        // }
-        // if(ans == -1) System.out.println("not isomorphic");
-        // if(ans == 0) System.out.println("isomorphic");
+        String str1 = obj.nextLine();
+        String str2 = obj.nextLine();
+        int ans = 0;
+        Map<Character,Character> mp = new HashMap<>();
+        if(str1.length()!=str2.length()){
+            System.out.println("not isomorphic");
+        }
+        for(int i=0;i<str1.length();i++){
+            char s1 = str1.charAt(i);
+            char s2 = str2.charAt(i);
+            if(mp.containsKey(s1)){
+                if(mp.get(s1)!=s2){
+                    ans = -1;
+                }
+            }else{
+                if(mp.containsValue(s2)){
+                    ans = -1;
+                }
+                mp.put(s1, s2);
+            }
+        }
+        if(ans == -1) System.out.println("not isomorphic");
+        if(ans == 0) System.out.println("isomorphic");
 
         // ! MATRIX MULTIPLY
         int[][] arr1 = new int[3][3];
